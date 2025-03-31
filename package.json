@@ -1,0 +1,13 @@
+{
+	"name": "stellar-good-time",
+	"version": "1.0.0",
+	"description": "Stellar Good Time Website",
+	"main": "index.js",
+	"scripts": {
+		"scrape": "wget -r -l 1 -p -k -E --no-host-directories https://stellargoodtime.my.canva.site/"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {}
+}
