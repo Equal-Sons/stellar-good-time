@@ -132,10 +132,10 @@ export default function ContactForm() {
 								<SelectValue placeholder="Please Select" />
 							</SelectTrigger>
 							<SelectContent>
-								<SelectItem value="vintage">Vintage Shop</SelectItem>
-								<SelectItem value="event">Event Design</SelectItem>
-								<SelectItem value="marketing">Marketing</SelectItem>
-								<SelectItem value="other">Other</SelectItem>
+								<SelectItem value="home-goods">Home Goods</SelectItem>
+								<SelectItem value="jewelry">Jewelry</SelectItem>
+								<SelectItem value="marketing">Marketing Services</SelectItem>
+								<SelectItem value="event-design">Event Design</SelectItem>
 							</SelectContent>
 						</Select>
 					</div>
