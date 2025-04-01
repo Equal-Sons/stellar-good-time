@@ -5,19 +5,21 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-rose">
 			{/* Hero Section */}
-			<section className="font-[Goldage] py-[16rem] px-4 text-center max-w-[60%] mx-auto">
-				<div className="leading-none">
-					<h1 className="text-[6em] md:text-[10em] lg:text-[16em] 3xl:text-[24em] italic text-pink mb-2">
-						Stellar
-					</h1>
-					<h1 className="text-[4em] md:text-[7em] lg:text-[10em] 3xl:text-[14em] text-white mb-8">
-						Good <span className="text-pink">Time</span>
-					</h1>
-				</div>
-				<div className="text-xl md:text-2xl lg:text-5xl font-bold flex justify-around font-sans space-x-8 text-pink tracking-widest">
-					<span>GOODS</span>
-					<span>JEWELS</span>
-					<span>DESIGNS</span>
+			<section className="min-h-screen flex flex-col justify-center font-[Goldage] px-4 text-center 2xl:max-w-[60%] md:mx-auto">
+				<div>
+					<div className="leading-none">
+						<h1 className="text-[5em] sm:text-[8em] md:text-[10em] lg:text-[14em] 3xl:text-[24em] italic text-pink mb-2">
+							Stellar
+						</h1>
+						<h1 className="text-[3em] sm:text-[5em] md:text-[6em] lg:text-[8em] 3xl:text-[14em] text-white mb-8">
+							Good <span className="text-pink">Time</span>
+						</h1>
+					</div>
+					<div className="text-md md:text-2xl lg:text-5xl font-bold flex justify-around font-sans space-x-8 text-pink tracking-widest">
+						<span>GOODS</span>
+						<span>JEWELS</span>
+						<span>DESIGNS</span>
+					</div>
 				</div>
 			</section>
 
@@ -34,31 +36,33 @@ export default function Home() {
 						<span className="font-bold">All parts good time.</span>
 					</p>
 
-					<div className="grid grid-cols-2 gap-4 mt-12">
-						<div className="bg-pink aspect-square">
-							<Image
-								src="/stellargoodtime-jewelry.png?height=300&width=300"
-								alt="Vintage ring"
-								width={300}
-								height={300}
-								className="w-full h-full object-cover"
-							/>
+					<div className="flex mt-12 gap-3">
+						<div className="flex flex-col basis-1/3 gap-3">
+							<div className="bg-pink aspect-square">
+								<Image
+									src="/stellargoodtime-jewelry.png?height=200&width=200"
+									alt="Vintage ring"
+									width={200}
+									height={200}
+									className="w-full h-full object-cover"
+								/>
+							</div>
+							<div className="bg-yellow aspect-square">
+								<Image
+									src="/stellargoodtime-design.png?height=200&width=200"
+									alt="Vintage cards"
+									width={200}
+									height={200}
+									className="w-full h-full object-cover"
+								/>
+							</div>
 						</div>
-						<div className="bg-green row-span-2">
+						<div className="bg-green basis-2/3">
 							<Image
-								src="/stellargoodtime-home-goods.png?height=600&width=300"
+								src="/stellargoodtime-home-goods.png?height=400&width=400"
 								alt="White bird on green background"
-								width={300}
-								height={600}
-								className="w-full h-full object-cover"
-							/>
-						</div>
-						<div className="bg-yellow aspect-square">
-							<Image
-								src="/stellargoodtime-design.png?height=300&width=300"
-								alt="Vintage cards"
-								width={300}
-								height={300}
+								width={400}
+								height={400}
 								className="w-full h-full object-cover"
 							/>
 						</div>
