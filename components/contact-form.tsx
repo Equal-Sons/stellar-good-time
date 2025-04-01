@@ -13,7 +13,6 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
-import { sendEmail } from "@/app/email";
 
 export default function ContactForm() {
 	const [formData, setFormData] = useState({
@@ -41,7 +40,10 @@ export default function ContactForm() {
 		e.preventDefault();
 		setIsSubmitting(true);
 
-		await sendEmail(formData);
+		const response = await fetch("/.netlify/functions/get-rsvp-list");
+		const json = await response.json();
+
+		console.log(json);
 
 		setIsSubmitting(false);
 		setSubmitted(true);
