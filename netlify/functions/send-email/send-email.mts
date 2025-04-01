@@ -24,7 +24,7 @@ export const handler: Handler = async (event) => {
 		sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 		await sgMail.send({
-			to: ["justin@equalsons.com", "hello@stellargoodtime.com"],
+			to: process.env.SENDGRID_SEND_TO,
 			from: process.env.SENDGRID_SENDER_EMAIL as string,
 			replyTo: email,
 			subject: `New contact from: ${name}`,
