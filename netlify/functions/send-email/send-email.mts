@@ -21,11 +21,11 @@ export const handler: Handler = async (event) => {
 		const name = `${requestBody.firstName} ${requestBody.lastName}`.trim();
 		const { email, service, message } = requestBody;
 
-		sgMail.setApiKey(Netlify.env.get("SENDGRID_API_KEY") as string);
+		sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 		await sgMail.send({
 			to: ["justin@equalsons.com", "hello@stellargoodtime.com"],
-			from: Netlify.env.get("SENDGRID_SENDER_EMAIL") as string,
+			from: process.env.SENDGRID_SENDER_EMAIL as string,
 			replyTo: email,
 			subject: `New contact from: ${name}`,
 			text: `
