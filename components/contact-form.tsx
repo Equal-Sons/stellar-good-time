@@ -40,7 +40,14 @@ export default function ContactForm() {
 		e.preventDefault();
 		setIsSubmitting(true);
 
-		const response = await fetch("/.netlify/functions/get-rsvp-list");
+		const response = await fetch("/.netlify/functions/send-email", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(formData),
+		});
+
 		const json = await response.json();
 
 		console.log(json);
