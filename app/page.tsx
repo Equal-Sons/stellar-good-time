@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-rose">
 			{/* Hero Section */}
-			<section className="min-h-screen flex flex-col justify-center font-[Goldage] px-4 text-center 2xl:max-w-[60%] md:mx-auto">
+			<section className="min-h-screen flex flex-col justify-center font-[Goldage] px-4 py-6 text-center 2xl:max-w-[60%] md:mx-auto">
 				<div>
 					<div className="leading-none">
 						<h1 className="text-[5em] sm:text-[8em] md:text-[10em] lg:text-[14em] 3xl:text-[24em] italic text-pink mb-2">
